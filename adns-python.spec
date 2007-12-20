@@ -8,6 +8,7 @@ Patch1: adns-python-invalid_free.patch
 License: GPL
 Group: Development/Python
 Requires: python >= %pyver
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: python-devel >= %{pyver} adns-devel
 URL: http://dustman.net/andy/python/adns-python
 
