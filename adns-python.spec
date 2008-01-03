@@ -16,8 +16,6 @@ URL: http://dustman.net/andy/python/adns-python
 adns-python is a Python module that interfaces to the adns asynchronous
 resolver library.
 
-http://www.gnu.org/software/adns/
-
 %prep
 %setup -q
 %patch0 -p1 -b .srv
