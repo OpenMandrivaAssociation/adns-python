@@ -1,8 +1,8 @@
 Summary: Python bindings for GNU adns library
 Name: adns-python
-Version: 1.1.1
-Release: %mkrel 5
-Source0: %{name}-%{version}.tar.bz2
+Version: 1.2.1
+Release: %mkrel 
+Source0: %{name}-%{version}.tar.gz
 Patch0: adns-python-srv.patch
 Patch1: adns-python-invalid_free.patch
 License: GPL
