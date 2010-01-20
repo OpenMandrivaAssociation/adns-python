@@ -3,8 +3,6 @@ Name: adns-python
 Version: 1.2.1
 Release: %mkrel 1
 Source0: %{name}-%{version}.tar.gz
-Patch0: adns-python-srv.patch
-Patch1: adns-python-invalid_free.patch
 License: GPL
 Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -18,8 +16,6 @@ resolver library.
 
 %prep
 %setup -q
-%patch0 -p1 -b .srv
-%patch1 -p0 -b .free
 
 %build
 env CFLAGS="$RPM_OPT_FLAGS" python setup.py build
