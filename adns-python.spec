@@ -1,14 +1,14 @@
-Summary: Python bindings for GNU adns library
-Name: adns-python
-Version: 1.2.1
-Release: %mkrel 1
-Source0: %{name}-%{version}.tar.gz
-License: GPL
-Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: adns-devel
+Summary:	Python bindings for GNU adns library
+Name:		adns-python
+Version:	1.2.1
+Release:	%mkrel 2
+Source0:	%{name}-%{version}.tar.gz
+License:	GPLv2
+Group:		Development/Python
+BuildRoot:	%{_tmppath}/%{name}-buildroot
+BuildRequires:	adns-devel
 %py_requires -d
-URL: http://dustman.net/andy/python/adns-python
+URL:		http://dustman.net/andy/python/adns-python
 
 %description
 adns-python is a Python module that interfaces to the adns asynchronous
