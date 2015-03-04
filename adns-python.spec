@@ -21,12 +21,12 @@ sed -i 's_#!/usr/bin/env python_#!/usr/bin/env python2_' DNSBL.py
 sed -i 's_#!/usr/bin/python_#!/usr/bin/python2_' ADNS.py
 
 %build
-env CFLAGS="%{optflags}" python setup.py build
+env CFLAGS="%{optflags}" python2 setup.py build
 
 %install
-python setup.py install --root=%{buildroot}
+python2 setup.py install --root=%{buildroot}
 
 %files
 %doc GPL README
-%{_libdir}/python%{py_ver}/site-packages/*
+%{_libdir}/python%{py2_ver}/site-packages/*
 
