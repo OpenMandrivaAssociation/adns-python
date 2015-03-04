@@ -6,7 +6,9 @@ Source0:	%{name}-%{version}.tar.gz
 License:	GPLv2
 Group:		Development/Python
 BuildRequires:	adns-devel
-BuildRequires:  python-devel
+BuildRequires:  python2-devel
+Requires:  python2
+
 URL:		http://dustman.net/andy/python/adns-python
 
 %description
@@ -15,6 +17,8 @@ resolver library.
 
 %prep
 %setup -q
+sed -i 's_#!/usr/bin/env python_#!/usr/bin/env python2_' DNSBL.py
+sed -i 's_#!/usr/bin/python_#!/usr/bin/python2_' ADNS.py
 
 %build
 env CFLAGS="%{optflags}" python setup.py build
